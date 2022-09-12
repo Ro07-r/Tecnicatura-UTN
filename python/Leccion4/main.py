@@ -129,6 +129,68 @@ print(diccionario.get('POO'))
 diccionario['IDE'] = 'Entorno de Desarrollo Integrado'
 print(diccionario)
 
+# Recorrer elementos de un diccionario
+for termino in diccionario: # Muestra solo las llaves
+    print(termino)
+
+for termino in diccionario.keys(): # Funcion para mostrar solo las llaves
+    print(termino)
+
+for valor in diccionario.values(): # Funcion para mostrar solo el valor
+    print(valor)
+
+for termino, valor in diccionario.items(): # Funcion para mostrar llave y valor
+    print(termino, valor)
+
+# CONCATENAR LISTAS
+lista1 = [1, 2, 3, 1, 2, 3]
+lista2 = [4, 5, 6]
+lista3 = lista1 + lista2
+print(lista3)
+
+lista3.extend([7, 8, 9]) # Funcion para agregar elementos a una lista
+print(lista3)
+
+print(lista3.index(5)) # Funcion para ubicar en qué indice está el valor ingresado
+#print(lista3.index(0)) Esto daría error porque el numero 0 no está en la lista
+
+# AVERIGUAR CUANTOS VALORES REPETIDOS HAY DENTRO DE LA LISTA
+print(lista3.count(1))
+
+# PONER LA LISTA DE FORMA ASCENDENTE O DESCENDENTE
+lista3.reverse()
+print(lista3)
+
+# METODOS DE ORDENAMIENTO
+lista3.sort() # Ascendente
+print(lista3)
+lista3.sort(reverse=True) # Descendente
+print(lista3)
+
+# Pilas usando listas
+pila = [1, 2, 3]
+pila.append(4) # Agregar elementos a la lista
+pila.append(5)
+print(pila)
+
+pila.pop() # Elimina el ultimo elemento de la lista
+print(pila)
+
+# Operaciones en conjunto
+conjunto1 = {'hello', 'bye'}
+conjunto2 = {'bye', 'chau'}
+print(conjunto1 == conjunto2) # Devuelve un booleano
+conjunto3 = conjunto1 | conjunto2 # Une los dos conjuntos
+print(conjunto3)
+conjunto3 = conjunto1 & conjunto2 # Que elemento tienen en comun
+print(conjunto3)
+conjunto3 = conjunto1 - conjunto2 # Asigna el valor que esta en el conjunto1 y no en el conjunto2
+print(conjunto3)
+conjunto3 = conjunto2 - conjunto1 # Asigna el valor que esta en el conjunto2 y no en el conjunto1
+print(conjunto3)
+
+
+
 
 
 
