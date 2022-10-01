@@ -1,6 +1,9 @@
 package CicloWhile;
+//CICLO WHILE
+
 import java.util.Scanner;
-public class CicloWhile01 { //CICLO WHILE
+
+public class CicloWhile01 { 
     public static void main(String[] args) {
         var contar = 0;
         while (contar <7){
@@ -37,18 +40,25 @@ public class CicloWhile01 { //CICLO WHILE
             System.out.println("contando = " + contando);
         }
         
-        //EJERCICIO SUELTO DE PRACTICA
-        Scanner practica = new Scanner(System.in);
-        System.out.println("Ingrese un numero de ventas: ");
-        var num= practica.nextInt();
-        var ingreso = 0;
-        while (ingreso < num){
-            Scanner practice = new Scanner(System.in);
-            System.out.println("Ingrese un numero de ventas: ");
-            var num_2 = practice.nextLine();
-            ingreso++;
-        }
+       
         
+        
+             
         
     }
 }
+       
+        
+          
+           
+            
+            
+            
+            
+        
+        
+        
+        
+        
+
+
