@@ -51,3 +51,13 @@ console.log(typeof x);
 // null: significa ausencia de valor
 var y = null; //null no es un tipo de dato, pero su origen es de tipo object
 console.log(typeof y);
+
+//Tipo de dato array y Empty String
+//Un arreglo es de tipo object
+var autos = ["Citroen", "Audi", "BMW", "Ford"];
+console.log(autos);
+console.log(typeof autos); //Con typeof preguntamos qué tipo de dato es
+
+var z = '';
+console.log(z);
+console.log(typeof z);
