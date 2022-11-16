@@ -13,19 +13,20 @@ print(persona1.edad)
 
 #CREACION DE OBJETOS CON ARGUMENTOS
 class Persona:
-    def __init__(self, nombre, apellido, edad, *args, **kwargs):
+    def __init__(self, nombre, apellido, dni, edad, *args, **kwargs):
         self.nombre = nombre # 1: atributo 2: variable por argumento
         self.apellido = apellido
+        self._dni = dni # Este atributo esta encapsulado. Con el guión bajo estamos encapsulando
         self.edad = edad
         self.args = args
         self.kwargs = kwargs
     def mostrar_detalle(self):
-        print(f'Persona: {self.nombre} {self.apellido} {self.edad} {self.args} {self.kwargs}') # La variable self solo se encuentra dentro de los metodos
+        print(f'Persona: {self.nombre} {self.apellido} {self._dni} {self.edad} {self.args} {self.kwargs}') # La variable self solo se encuentra dentro de los metodos
                                                                                                # Dentro de la clase si queremos acceder a los atributos
                                                                                                # usamos self.atributo
 
 
-persona1 = Persona('Rosalia', 'Lotierzo', 31) #Necesitamos enviar argumentos
+persona1 = Persona('Rosalia', 'Lotierzo', 36378765, 31) #Necesitamos enviar argumentos
 #print(persona1.nombre)
 #print(persona1.apellido)
 #print(persona1.edad)
@@ -34,7 +35,7 @@ print(f'El objeto1 de la clase persona: {persona1.nombre} {persona1.apellido} {p
 
 
 #CREACION DE UN SEGUNDO OBJETO
-persona2 = Persona('Cristian', 'Garcia', 50)
+persona2 = Persona('Cristian', 'Garcia', 22987560, 50)
 print(f'El objeto2 de la clase persona: {persona2.nombre} {persona2.apellido} {persona2.edad}')
 
 
@@ -57,5 +58,6 @@ print(persona1.telefono)
 
 # print(persona2.telefono) el objeto persona2 no tiene este atributo por ende nos sale error
 
-persona3 = Persona('Sabrina', 'Cisterna', 31, 'Teléfono', '1567654387', 'Calle Jonte', 765, 'Manzana', 77, 'Casa', 18, Altura=1.83, Peso=105, Cfavorito='Azul', Auto='Citroen', Modelo=2021)
+persona3 = Persona('Sabrina', 'Cisterna', 35276539, 31, 'Teléfono', '1567654387', 'Calle Jonte', 765, 'Manzana', 77, 'Casa', 18, Altura=1.83, Peso=105, Cfavorito='Azul', Auto='Citroen', Modelo=2021)
 persona3.mostrar_detalle()
+# print(persona3._dni) # Esto no se debe utilizar
